@@ -18,10 +18,11 @@ import { useMemo, useState } from "react";
 import Timer from "../components/Timer";
 import styles from "../styles/Theme.module.css";
 import { parseIneligibility } from "../utils/parseIneligibility";
+import Link from "next/link";
 import Header from "../components/Header";
 
 // Put Your NFT Drop Contract address from the dashboard here
-const myNftDropContractAddress = "0xc7A26E90D3ad61e912a38B2ab50fEE96510469df";
+const myNftDropContractAddress = "0x564E946893313aFE0694e06A09Cb8693191e4949";
 
 const Home: NextPage = () => {
   const { contract: nftDrop } = useContract(myNftDropContractAddress);
@@ -213,8 +214,7 @@ const Home: NextPage = () => {
 
   return (
     <div className={styles.container}>
-      <Header />
-      <p>Home</p>
+            <Header/>
       <div className={styles.mintInfoContainer}>
         {isLoading ? (
           <p>Loading...</p>
@@ -292,6 +292,7 @@ const Home: NextPage = () => {
                       +
                     </button>
                   </div>
+                  
 
                   <div className={styles.mintContainer}>
                     {isSoldOut ? (

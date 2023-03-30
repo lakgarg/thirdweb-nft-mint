@@ -21,7 +21,6 @@ function MyApp({ Component, pageProps }: AppProps) {
           name="keywords"
           content="Thirdweb, thirdweb NFT drop, how to make thirdweb nft drop, how to make nft collection thirdweb"
         />
-      <Header/>
       </Head>
       <Component {...pageProps} />
     </ThirdwebProvider>

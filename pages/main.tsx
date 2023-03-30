@@ -52,7 +52,7 @@ export async function getServerSideProps(context: any) {
 
   // Instantiate our SDK
   const sdk = ThirdwebSDK.fromPrivateKey(
-    process.env.THIRDWEB_AUTH_PRIVATE_KEY,
+    process.env.THIRDWEB_AUTH_PRIVATE_KEY!,
     "mumbai"
   );
 

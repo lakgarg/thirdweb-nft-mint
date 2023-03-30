@@ -6,3 +6,5 @@ export const { ThirdwebAuthHandler, getUser } = ThirdwebAuth({
   domain: domainName,
   wallet: new PrivateKeyWallet(process.env.THIRDWEB_AUTH_PRIVATE_KEY || ""),
 });
+
+export default ThirdwebAuthHandler();

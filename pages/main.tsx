@@ -3,11 +3,11 @@ import { ThirdwebSDK } from "@thirdweb-dev/sdk";
 import { useLogout, useUser } from "@thirdweb-dev/react";
 import { getUser } from "../auth.config";
 import checkBalance from "../util/checkBalance";
-import styles from "../styles/Main.module.css";
+import styles from "../styles/Theme.module.css";
 import { useRouter } from "next/router";
 
-export default function Home() {
-  const { logout } = useLogout();
+export default function Main() {
+  const logout = useLogout();
   const { isLoggedIn, isLoading } = useUser();
   const router = useRouter();
 
@@ -21,10 +21,10 @@ export default function Home() {
     <div className={styles.container}>
       <h1 className={styles.h1}>Restricted Access Page</h1>
       <p className={styles.explain}>
-        Thanks for being a member of our NFT community!
+        Thanks for being a part of our NFT community!
       </p>
 
-      <button className={styles.mainButton} onClick={logout}>
+      <button className={styles.mainButton} onClick={() => logout}>
         Logout
       </button>
     </div>

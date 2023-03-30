@@ -17,7 +17,7 @@ import Image from "next/image";
 import { useMemo, useState } from "react";
 import Timer from "../components/Timer";
 import styles from "../styles/Theme.module.css";
-import { parseIneligibility } from "../utils/parseIneligibility";
+import { parseIneligibility } from "../util/parseIneligibility";
 import Link from "next/link";
 import Header from "../components/Header";
 

@@ -2,8 +2,8 @@ import React, { useEffect } from "react";
 import { ThirdwebSDK } from "@thirdweb-dev/sdk";
 import { useLogout, useUser } from "@thirdweb-dev/react";
 import { getUser } from "../auth.config";
-import checkBalance from "../utils/checkBalance";
-import styles from "../styles/Home.module.css";
+import checkBalance from "../util/checkBalance";
+import styles from "../styles/Main.module.css";
 import { useRouter } from "next/router";
 
 export default function Home() {

@@ -1,6 +1,6 @@
 import { ConnectWallet, useAddress } from "@thirdweb-dev/react";
 import Link from "next/link";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Main.module.css";
 
 export default function Login() {
     const address = useAddress(); // Get the user's address
